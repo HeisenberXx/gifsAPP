@@ -7,6 +7,7 @@ import { GifsServiceService } from '../services/gifs-service.service';
 })
 export class BusquedaComponent{
 
+
   constructor(private gifsService:GifsServiceService){}
 
   // ViewChild me busca la referecia en el HTML

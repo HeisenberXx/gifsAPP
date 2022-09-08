@@ -8,7 +8,9 @@ import { GifsServiceService } from 'src/app/gifs/services/gifs-service.service';
 })
 export class SidebarComponent{
 
-  constructor(private gifsServices: GifsServiceService) {}
+  constructor(private gifsServices: GifsServiceService) {
+  }
+
 
   get historial(){
     return (this.gifsServices.historial)

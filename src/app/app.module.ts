@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
+import {HttpClientModule} from '@angular/common/http'
+import { GifsServiceService } from './gifs/services/gifs-service.service';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     SharedModule,
     GifsModule,
+    HttpClientModule,
+  
   ],
+  
   // INYECCION DE SERVICIOS
-  providers: [
 
-  ],
+  
+ 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

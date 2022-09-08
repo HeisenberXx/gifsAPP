@@ -1,2 +1,23 @@
-<div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consequatur neque tenetur totam quod cumque veniam facilis unde et. Iusto recusandae voluptates sed reprehenderit earum numquam itaque corrupti fuga ea.z</div>
+<!-- <ul>
+    <li *ngFor="let gif of resultados">
+        {{gif.title}}
+    </li>
+</ul> -->
 
+<div class="row">
+    <div class="col-6" *ngFor="let gifs of resultados">
+    
+        <div class="card">
+            <div class="card-body">
+                <!-- Los [] Nos sirven para asignarle el valor de una variable a una etiqueta HTML -->
+                <img [src]="gifs.images.downsized_medium.url" alt="titulo" class="card-img-top">
+                <p class="card-text">
+                    {{gifs.title}}
+                    <!-- {{gifs.images.downsized_medium.url}} -->
+
+                </p>
+            </div>
+        </div>
+    
+    </div>
+</div>
